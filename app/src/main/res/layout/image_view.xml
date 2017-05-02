@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="15dp">
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="색상을 클릭하시면 바로 실행 됩니다."
+        android:gravity="center"
+        android:textColor="#c3c7c2"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/red"
+            android:id="@+id/redColorScan"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:id="@+id/blueColorScan"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/green"
+            android:id="@+id/greenColorScan"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:id="@+id/yellowColorScan"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="전체 스캔"
+        android:background="#cccccc"
+        android:textColor="#ff000000"
+        android:layout_marginTop="10dp"
+        android:id="@+id/allColorScan"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_marginTop="10dp"
+        android:text="▽ 촬영 된 이미지"/>
+    <ImageView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/CropView"
+        android:src="@drawable/preview"/>
+
+
+</LinearLayout>
